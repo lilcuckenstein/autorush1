@@ -70,3 +70,16 @@ VALUES (
     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',  -- jelszó: "password"
     'admin'
 );
+
+-- Márkák hozzáadása
+INSERT INTO brands (name, logo) VALUES 
+('Toyota', 'toyota.png'),
+('BMW', 'bmw.png'),
+('Mercedes', 'mercedes.png');
+
+-- Autók hozzáadása
+INSERT INTO cars (brand_id, model, year, type, seats, price_per_day, image, description) VALUES
+(1, 'Corolla', 2022, 'Sedan', 5, 15000, 'corolla.jpg', 'Megbízható városi autó, alacsony fogyasztással'),
+(1, 'RAV4', 2021, 'SUV', 5, 20000, 'rav4.jpg', 'Terepjáró képességekkel rendelkező crossover'),
+(2, '320i', 2023, 'Sedan', 5, 25000, '320i.jpg', 'Prémium limuzin kiváló vezetési élménnyel'),
+(3, 'E-Class', 2022, 'Sedan', 5, 30000, 'eclass.jpg', 'Business osztályú luxusautó');
